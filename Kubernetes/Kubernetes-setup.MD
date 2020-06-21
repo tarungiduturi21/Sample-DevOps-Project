@@ -41,7 +41,7 @@
 1. Create a Route53 private hosted zone (you can create Public hosted zone if you have a domain)
    ```sh
    Routeh53 --> hosted zones --> created hosted zone  
-   Domain Name: valaxy.net
+   Domain Name: domain.in
    Type: Private hosted zone for Amzon VPC
    ```
 
@@ -66,7 +66,7 @@
 
 1. Create kubernetes cluser
     ```sh
-    kops update cluster demo.k8s.valaxy.net --yes
+    kops update cluster demo.domain.in --yes
     ```
 
 1. Validate your cluster
@@ -81,7 +81,7 @@
 
 1. To delete cluster
     ```sh
-     kops delete cluster demo.k8s.valaxy.net --yes
+     kops delete cluster demo.domain.in --yes
     ```
    
 #### Deploying Nginx pods on Kubernetes
