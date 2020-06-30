@@ -18,17 +18,17 @@
     curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl
 
     chmod +x ./kubectl
-    sudo mv ./kubectl /usr/local/bin/kubectl
+   sudo mv ./kubectl /usr/local/bin/kubectl
    ```
 
 1. Install kops on ubuntu instance
    ```sh
     curl -LO https://github.com/kubernetes/kops/releases/download/$(curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
                                      (or) version 1.15.0
-    curl -LO  https://github.com/kubernetes/kops/releases/download/1.15.0/kops-linux-amd64
+    curl -LO https://github.com/kubernetes/kops/releases/download/1.15.0/kops-linux-amd64
     
     chmod +x kops-linux-amd64
-    sudo mv kops-linux-amd64 /usr/local/bin/kops
+   sudo mv kops-linux-amd64 /usr/local/bin/kops
     ```
 1. Create an IAM user/role  with Route53, EC2, IAM and S3 full access
 
